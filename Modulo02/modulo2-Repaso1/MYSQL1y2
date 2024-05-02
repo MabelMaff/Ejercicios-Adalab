@@ -1,0 +1,26 @@
+CREATE SCHEMA SENDAS;
+USE SENDAS;
+
+CREATE TABLE Senderos_España (
+    ID CHAR(3),
+    Nombre VARCHAR(100),
+    Donde TEXT,
+    Tipo VARCHAR(30),
+    Duración CHAR(10),
+    Kilómetro CHAR(20),
+    Dificultad VARCHAR (50),
+    Esfuerzo VARCHAR (30),
+    Descripción TEXT
+);
+
+
+CREATE SCHEMA AEMET;
+USE AEMET;
+
+CREATE TABLE Temperaturas_Sierra_Grelos (
+    ID VARCHAR(10),
+    Temp_Max FLOAT NOT NULL, 
+    Temp_Mmin FLOAT NOT NULL,
+    Sierra VARCHAR (30),
+    Fecha VARCHAR (30)
+);
